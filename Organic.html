@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+    <style>
+       .bgimg{
+        background-image: url('https://wallpapers.com/images/featured/organic-farming-snmzav3nv42lgclu.jpg');
+        height:60vh;
+        width:100vw;
+        background-size:cover;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       }
+       .bgimg h1{
+        font-size:60px;
+        font-weight:bold;
+        color:white;
+       }
+       .card-group{
+        border:10px solid white;
+        padding:3%;
+       }
+       .content{
+        font-weight:lighter;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+       .fa-brands{
+        font-size:55px;
+        
+       }
+       .hello{
+        justify-content: space-around;
+       }
+       .one{
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        gap:2em;
+
+       }
+       .one .fa-brands{
+        color:white;
+        font-size:40px;
+        padding-top:3%;
+        padding-bottom:4%;
+       }
+       .one .fa-brands:hover{
+        color:black;
+       }
+       .caro{
+        margin-left:10%;
+       }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-100-organic-eco-label-with-leave-png-image_5682683.png" width="16%"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Payment
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#payment">Online</a></li>
+                  <li><a class="dropdown-item" href="#payment">Offline</a></li>
+               
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- landing page -->
+      <section class="bgimg" id="home">
+   <h1>ORGANIC FORM</h1>
+   <button class="btn btn-warning">MORE PRODUCTS</button>
+      </section>
+      <!-- end Home -->
+      <!-- About -->
+      <section class="mt-5" id="about">
+        <h1 class="text-center">About</h1>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/colorful-fruits-tasty-fresh-ripe-juicy-white-desk_179666-169.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fruits</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button class="btn btn-primary">Shop More <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/front-view-vegetable_140725-103355.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vegetables</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                This content is a little bit longer.
+            </p>
+            <button class="btn btn-primary">Shop More <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/fresh-milk-bottle-glass_1150-17631.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Milk</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content.</p>
+            <button class="btn btn-primary">Shop More <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- carousel -->
+     <div class="container">
+        <div class="row caro">
+            <div class="col-12 col-lg-10 ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://img.freepik.com/premium-photo/autumn-still-life-with-fruits-berries-autumnal-leaves-wooden-background_337384-20182.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/healthy-fresh-vegetable-salad-with-organic-ingredients-generated-by-ai_188544-27591.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/traditional-thai-food-with-rice-vermicelli-bell-peppers-bokchoy-desk-against-black-background_23-2148093081.jpg?size=626&ext=jpg&ga=GA1.1.873214219.1697101335&semt=ais" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+        </div>
+
+     </div>
+    </section>
+    <!-- payment -->
+    <section class="mt-5" id="payment">
+        <div class="container">
+            <h1 style="color:green" class="text-center">Payment</h1>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-5" style="font-size:20px">
+                    Payment is the voluntary transfer of money, equivalent, or other valuable items from one person to another in exchange for goods or services received or to meet a legal obligation. The person who gives the money is often called the payer, while the person who gets the money is called the payee.
+                    <div class="d-flex hello">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+<img src="https://zeevector.com/wp-content/uploads/10-Percent-Discount-PNG@zeevector.com_.png" width="50%"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="mt-5" id="contact">
+<div class="container mt-5">
+    <h1 style="color:green" class="text-center">Contact</h1>
+<div class="row">
+<div class="col-12 col-lg-6 order-sm-2">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+<div class="col-12 col-lg-6 order-sm-1">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15301.946239970002!2d80.6437899!3d16.501516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35faaff2c857b3%3A0xf4c62e93c4842a9b!2sPVP%20Square!5e0!3m2!1sen!2sin!4v1699265565881!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+    </section>
+    <!-- footer -->
+    <footer class="one" style="background-color: green;">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-threads"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        
+    </footer>
+    <h5 class="text-center">@copyright by CodegnanDestination</h5>
+    <a href="#" class="p-5"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
